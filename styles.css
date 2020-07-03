@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	background: rgb(225, 225, 225);
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container-fluid{
+	background-color: #FFF;
+	width: 400px;
+	height: 400px;
+}
+
+h2 {
+	text-align: center;
+	font-weight: bold;
+	margin: 15px;
+
+}
+
+p {
+	text-align: center;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.open-button {
+	background-color: #000;
+	color: white;
+	border: none;
+	padding: 16px 20px;
+	cursor: pointer;
+	opacity: .8;
+	position: fixed;
+	top: 350px;
+	margin: auto 120px;
+	bottom: 25px
+	width: 350px;
+}
+
+.form-pop {
+	display: none;
+	position: fixed;
+	bottom: 250px;
+	margin: auto;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+}
+
+.form-container {
+	max-width: 400px;
+	padding: 30px;
+	margin: -150px;
+	margin-left: -15px;
+	background-color: #FFF;
+}
+
+.form-container h1{
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+
+	width: 100%;
+	border: none;
+	background-color: #f1f1f1;
+	padding: 10px;
+	margin: 5px 0 20px 0;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+	outline: none;
+	background-color: #ccc;
+}
+
+.form-container .btn {
+	background: #23acd1;
+	color: #FFF;
+	padding: 15px 20px;
+	cursor: pointer;
+	border: none;
+	width: 100%;
+	margin-bottom: 10px;
+	opacity: .8;
+}
+
+.form-container .cancel {
+	background: red;
+
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+
+	opacity: 1;
+}
+
+.form-container.success input{
+	border-color: green;
+}
+
+
+.form-container.error input{
+	border-color: red;
+}
+
+@media (max-width: 768px) {
+
+	.container-fluid{
+		margin: 10px;
+		width: 350px;
+		height: 350px;
+	}
+
+	.open-button {
+		padding: 8px 15px;
+		margin-left: 100px;
+	}
+
+
+	.form-container{
+		width: 350px;
+		margin: -120px;
+		margin-left: -18px;
+	}
+
+}
